@@ -34,7 +34,6 @@ from .commands.customrole import Customrole
 from .commands.autorole import AutoRole
 from .commands.ticket import TicketSystem
 from .commands.logging import Logging
-from .commands.dev import Dev
 from .commands.translate import TranslateCog
 from .commands.jail import Jail
 
@@ -160,7 +159,7 @@ async def setup(bot: axon):
         AntiChannelCreate, AntiChannelDelete, AntiChannelUpdate, AntiEveryone, AntiGuildUpdate,
         AntiIntegration, AntiKick, AntiPrune, AntiRoleCreate, AntiRoleDelete,
         AntiRoleUpdate, AntiWebhookUpdate, AntiWebhookCreate, 
-        AntiWebhookDelete, AntiSpam, AntiCaps, AntiLink, AntiInvite, AntiMassMention, Music, Stats, Emergency, Status, NoPrefix, FilterCog, AutoReaction, AutoReactListener, Ban, Unban, Mute, Unmute, Lock, Unlock, Hide, Unhide, Kick, Warn, Role, Message, Moderation, TopCheck, Snipe, Global, QR, VanityRoles, ReactionRoles, Messages, Dev, TranslateCog, FastGreet, Jail, #InviteTracker,
+        AntiWebhookDelete, AntiSpam, AntiCaps, AntiLink, AntiInvite, AntiMassMention, Music, Stats, Emergency, Status, NoPrefix, FilterCog, AutoReaction, AutoReactListener, Ban, Unban, Mute, Unmute, Lock, Unlock, Hide, Unhide, Kick, Warn, Role, Message, Moderation, TopCheck, Snipe, Global, QR, VanityRoles, ReactionRoles, Messages, TranslateCog, FastGreet, Jail, #InviteTracker,
     ]
 
 
@@ -210,7 +209,6 @@ async def setup(bot: axon):
   #await bot.add_cog(InviteTracker(bot))
   await bot.add_cog(ReactionRoles(bot))
   await bot.add_cog(Messages(bot))
-  await bot.add_cog(Dev(bot))
   await bot.add_cog(TranslateCog(bot))
   await bot.add_cog(FastGreet(bot))
   await bot.add_cog(Jail(bot))
